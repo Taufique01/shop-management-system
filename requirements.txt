@@ -67,3 +67,5 @@ whitenoise==5.1.0
 wrapt==1.12.1
 xhtml2pdf==0.2.4
 zope.interface==5.1.0
+
+gunicorn==20.1.0
