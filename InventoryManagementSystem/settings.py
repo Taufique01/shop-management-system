@@ -10,7 +10,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '3zue&@nv@q_*70)!#ntcfxn8k(k8xa#o-q+jzk$l&+xj%)(51r'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -130,7 +130,7 @@ STATIC_URL = '/static/'
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'templates/build'),
+    os.path.join(BASE_DIR, 'templates/build/static'),
 )
 
 CORS_ORIGIN_WHITELIST = [
