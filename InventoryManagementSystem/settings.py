@@ -10,7 +10,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '3zue&@nv@q_*70)!#ntcfxn8k(k8xa#o-q+jzk$l&+xj%)(51r'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -135,9 +135,10 @@ STATICFILES_DIRS = (
 
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:8000",
+    "https://inventory-taufique.herokuapp.com",
 	#"http://192.168.0.103:8000",
 ]
-CORS_ORIGIN_ALLOW_ALL = True   
+#CORS_ORIGIN_ALLOW_ALL = True   
 
 import dj_database_url
 prod_db=dj_database_url.config(conn_max_age=500)
